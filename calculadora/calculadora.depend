@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1650753129 source:c:\users\thiag\onedrive\Área de trabalho\calculadora decimal binaria\calculadora\main.cpp
+	<iostream>
+	<math.h>
+	<locale.h>
+
