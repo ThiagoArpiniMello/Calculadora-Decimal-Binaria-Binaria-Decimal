@@ -1,6 +1,6 @@
 #include <iostream>
-#include <math.h>
-#include <locale.h>
+#include <math.h> //utilizada para funções matemáticas
+#include <locale.h> //utilizada para acentuação e ç
 
 
 using namespace std;
@@ -13,11 +13,11 @@ int main()
 
     while(executa){
         valor = 0 ;
-        cout << "==Calculadora de convers�o Decimal para Bin�rio e Binario para Decimal==" <<endl;
+        cout << "==Calculadora de conversão Decimal para Binário e Binario para Decimal==" <<endl; //tela inicial do programa
         cout << "-------Escolha um dos valores-------" <<endl;
-        cout << "1 - Decimal para Bin�rio" << endl;
-        cout << "2 - Bin�rio para Decimal" << endl;
-        cout << "0 - Para sair" << endl;
+        cout << "1 - Decimal para Binário" << endl; //opção de conversão de decimal para binário
+        cout << "2 - Binário para Decimal" << endl; //opção de conversão de binário para decimal
+        cout << "0 - Para sair" << endl; //encerrar o programa
         cin >> valor;
         cout << valor << " Valor que digitei" << endl;
         if (valor == 0 ) {
@@ -29,7 +29,7 @@ int main()
              int decimal;
              cout << "Digite o valor em Decimal:" << endl;
              cin >> decimal;
-             cout << "O valor em Decimal �: "<< decimal << endl;
+             cout << "O valor em Decimal é: "<< decimal << endl;
              for (int i =7; i >= 0; i-- ) {
                   if (decimal % 2 == 0){
                         bin[i] = 0;
@@ -48,9 +48,9 @@ int main()
                 if(valor == 2) {
                     int binario;
                     int decimal = 0;
-                    cout << "Digite o valor em Bin�rio:" <<endl;
+                    cout << "Digite o valor em Binário:" <<endl;
                     cin >> binario;
-                    cout << "O valor em Bin�rio �: "<< binario << endl;
+                    cout << "O valor em Binário é: "<< binario << endl;
                     int i = 0;
                     for (int i = 0; i < 8; i++){
                     decimal = decimal + pow(2,i)*(binario%10);
@@ -60,7 +60,7 @@ int main()
 
 
                 }else{
-                    cout << "N�o temos esse valor no menu" <<endl;
+                    cout << "Não temos esse valor no menu" <<endl; //caso o usuário digite outro número que não esteja no menu
                 }
             }
         }
